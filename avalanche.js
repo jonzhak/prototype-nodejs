@@ -7,10 +7,7 @@ const getApiToken = async () => {
         client_id +
         "&client_secret=" +
         client_secret,
-      {
-        referral_code: refCode,
-        email: user.email,
-      },
+
       { headers: { "content-type": "application/json", Authorization: token } }
     )
     .then((response) => {
