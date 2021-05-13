@@ -8,7 +8,7 @@ const getApiToken = async () => {
         "&client_secret=" +
         client_secret,
 
-      { headers: { "content-type": "application/json", Authorization: token } }
+      { headers: { "content-type": "application/json" } }
     )
     .then((response) => {
       return response.data.token;
